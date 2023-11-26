@@ -1,0 +1,73 @@
+PROGRAMM
+	BEGIN
+		PROGRAM PROGRAM
+		A Id
+	DESCRIPTIONS
+		DESCR
+			INTEGER INTEGER
+			VARLIST
+				a Id
+				, Comma
+				b Id
+		DESCR
+			REAL REAL
+			VARLIST
+				r Id
+	OPERATORS
+		OP
+			a Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					5 Const
+		OP
+			b Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					67 Const
+		OP
+			b Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					( Left_Bracket
+					EXPR
+						SIMPLE_EXPR
+							b Id
+						+ Plus_Operation
+						SIMPLE_EXPR
+							a Id
+					) Right_Bracket
+		OP
+			b Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					a Id
+				- Minus_Operation
+				SIMPLE_EXPR
+					b Id
+		OP
+			r Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					2.5675464 RealConst
+				+ Plus_Operation
+				SIMPLE_EXPR
+					a Id
+		OP
+			r Id
+			= Assign_Operation
+			EXPR
+				SIMPLE_EXPR
+					RTOI RTOI
+					( Left_Bracket
+					EXPR
+						SIMPLE_EXPR
+							57.912 RealConst
+					) Right_Bracket
+	END
+		END END
+		A Id

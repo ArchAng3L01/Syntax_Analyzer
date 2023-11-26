@@ -1,0 +1,10 @@
+PROGRAM A
+INTEGER a, b
+REAL r
+a = 5
+b = 67
+b=(b+a)
+b = a-b
+r = 2.5675464 + a
+r = RTOI(57.912)
+END A
